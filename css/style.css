@@ -1,0 +1,123 @@
+body {
+    background-image: url("../resources/img/background.jpg");
+}
+
+.container {
+    position: relative;
+}
+
+header {
+    text-align: center;
+    font-size: 60px;
+    color: rgba(64, 23, 80, 0.61);
+}
+
+img {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+p {
+    margin-top:2px;
+    text-align: center;
+    color: rgba(64, 23, 80, 0.61);
+}
+
+img:hover {
+    opacity: 1.7;
+}
+
+.sticker {
+    padding-top: 35px;
+    position: absolute;
+    background: rgba(255, 254, 254, 0.31);
+    min-height: 100px;
+    min-width: 100px;
+    left: 0;
+    top: 0;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+
+}
+
+.sticker .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    background: #4eaba8;
+    width: 100%;
+}
+
+.sticker .bar .barcontainer textarea {
+    box-sizing: border-box;
+    resize: none;
+    background: transparent;
+    color: #ffffff;
+    line-height:1.4;
+    width: 75%;
+}
+
+.sticker .bar:hover {
+    cursor: move;
+}
+
+.sticker textarea {
+    padding: 3px 10px;
+    box-sizing: border-box;
+    min-height: 100px;
+    min-width: 100px;
+    background: transparent;
+    color: #4eaba8;
+    border: none;
+    outline: none;
+}
+
+.barcontainer {
+    position: relative;
+}
+
+.close {
+    /*box-sizing: border-box;*/
+    position: absolute;
+    top: 0.67em;
+    right: 1.6em;
+    width: 15px;
+    height: 15px;
+    opacity: 0.3;
+
+}
+.close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.close:before, .close:after {
+    position: relative;
+    left: 15px;
+    content: ' ';
+    height: 28px;
+    width: 2px;
+    background-color: #ffffff;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
+
+
